@@ -9,6 +9,7 @@ import Iletisim from './components/iletisim/Iletisim';
 import Kadromuz from './components/kadromuz/Kadromuz';
 import Referanslar from './components/referanslar/Referanslar';
 import Footer from './components/Footer';
+import './styles/index.scss'
 
 function App() {
   return (
