@@ -1,0 +1,60 @@
+@import '../../styles/variables.scss';
+
+.references-container {
+  font-family: 'Arial', sans-serif;
+  padding: 20px;
+  text-align: center;
+  background-color: $color-light-grey;
+
+  .references-title {
+    color: $color-ter-blue;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+
+  .references-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .reference-card {
+    background-color: $color-white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: calc(33% - 40px);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .reference-title {
+      color: $color-navy-blue;
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+
+    .reference-description {
+      color: $color-dark-grey;
+      font-size: 1rem;
+      margin-bottom: 10px;
+    }
+
+    .reference-author {
+      color: $color-soothing-green;
+      font-size: 0.9rem;
+      font-style: italic;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .reference-card {
+      width: calc(100% - 40px);
+    }
+  }
+}

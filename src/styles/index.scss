@@ -1,0 +1,8 @@
+@import 'variables.scss';
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    /* Ensures there's no overflow caused by padding or margin */
+    overflow-x: hidden;
+  }

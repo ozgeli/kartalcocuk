@@ -1,0 +1,58 @@
+@import '../../styles/variables.scss';
+
+.about-container {
+  font-family: 'Arial', sans-serif;
+  background-color: $color-light-grey;
+  padding: 40px;
+  section {
+    margin-bottom: 50px;
+    border-left: 5px solid $color-ter-blue;
+    padding: 20px;
+    background-color: $color-white;
+    box-shadow: 0 0 10px rgba(0, 174, 228, 0.5);  // Adds a glowing shadow
+    transition: transform 0.4s ease, box-shadow 0.4s ease;  // Smooth transition
+    background-color: transparent;  // Ensure no background color
+    &:hover {
+      transform: translateY(-5px);
+    }
+  }
+
+  .heading, .subheading, p {
+    color: $color-ter-blue;
+    font-size: 1.2rem; // Standardized font size for all text types
+  }
+
+  .about-intro, .mission-statement, .vision-statement, .team-introduction {
+    margin-bottom: 15px;
+    p {
+      line-height: 1.6;
+      color: $color-dark-grey;
+    }
+  }
+
+  .team-introduction {
+    background-color: $color-new-blue3;
+    
+    .team-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .subheading, .team-link {
+        color: $color-light-grey;
+      }
+
+      .team-link {
+        background-color: $color-ter-blue;
+        text-decoration: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-weight: bold;
+
+        &:hover {
+          background-color: darken($color-soothing-green, 10%);
+        }
+      }
+    }
+  }
+}

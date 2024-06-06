@@ -1,0 +1,152 @@
+@import '../../styles/variables.scss';
+
+.kadromuz {
+  text-align: center;
+  background-color: $color-white;  // Clean background for the section
+  padding: 2rem;
+
+  .kadromuz-title {
+    color: $color-ter-blue;  // Strong visibility for titles
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .kadromuz-description {
+    color: $color-dark-grey;  // Subdued tone for descriptive text
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .team-members-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);  // Adjusted for 4 members per row
+    gap: 1rem;
+
+    .team-member {
+      background-color: $color-light-grey;  // Soft background for each card
+      box-shadow: 0 0 10px rgba(0, 174, 228, 0.5);  // Adds a glowing shadow
+      transition: transform 0.4s ease, box-shadow 0.4s ease;  // Smooth transition
+      background-color: transparent;  // Ensure no background color
+      border-radius: 10px;  // Rounded edges for a soft look
+      overflow: hidden;
+      position: relative;
+      padding-top: 100%;  // Adjusted for more height relative to width
+
+      &:hover {
+        transform: scale(1.05);  // Scales up to come more forward
+        box-shadow: 0 60px 100px rgba(0, 0, 0, 0.7);  // Deeper shadow on hover
+      }
+
+      .member-photo-wrapper {
+        position: absolute;
+        top: 5%;  // Adjusted for better vertical centering
+        left: 50%;
+        transform: translate(-50%, -5%);  // Centering the photo vertically
+        width: 50%;  // Reduced width for a more vertical aspect
+        height: 65%;  // Increased height
+        background-color: $color-white;  // Ensures photo pops visually
+        clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%);  // Asymmetric bottom line
+        overflow: hidden;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);  // Solid appearance shadow
+
+        .member-photo {
+          height: 100%;
+          width: 100%;  // Ensure full coverage within the frame
+          background-size: cover;
+          background-position: center;
+        }
+      }
+
+      .member-info {
+        position: absolute;
+        bottom: 5px;  // Adjusted to create more space from bottom edge
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        width: 90%;  // Ensures the text is within bounds
+
+        .member-name {
+          color: $color-ter-blue;
+          margin-bottom: 5px;  // Added space between name and email
+          font-size: 1.2rem;
+        }
+
+        .member-expertise {
+          color: $color-dark-grey;
+          font-size: 1rem;
+          margin-bottom: 5px;  // Adjusted space
+        }
+
+        .member-email {
+          color: $color-almost-black;
+          font-size: 0.8rem;
+        }
+      }
+    }
+  }
+
+  // Responsive settings for smaller screens
+  @media screen and (max-width: 1280px) {
+    .team-members-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .team-members-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+
+    .modal-content {
+      background-color: white;
+      padding: 2rem;
+      border-radius: 10px;
+      position: relative;
+      max-width: 700px;  // Increased max-width for a larger modal
+      width: 90%;  // Adjusted width
+      text-align: center;
+      max-height: 90%;  // Ensure the modal does not overflow the viewport
+      overflow-y: auto;  // Add scrolling if content overflows
+
+      .close {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 1.5rem;
+        cursor: pointer;
+      }
+
+      .modal-image {
+        width: 100%;
+        height: 400px;  // Increased height for the image
+        background-size: cover;
+        background-position: center;
+        margin-bottom: 1rem;
+      }
+
+      h2 {
+        color: $color-ter-blue;
+        margin-bottom: 0.5rem;
+      }
+
+      p {
+        color: $color-dark-grey;
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+      }
+    }
+  }
+}

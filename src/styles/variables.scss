@@ -1,0 +1,79 @@
+// Color Palette Definitions
+
+// Greens
+
+$color-new-green1:#bbd2b6;
+$color-new-green2:#4b6e43;
+$color-new-green3:#6a9b5e;
+$color-soothing-green:#2E8B57; 
+//$color-ter-green: #00572b;
+
+$color-ter-blurred-green: #F0F0F0; 
+$color-ter-grey: #424e48; 
+
+//Yellow- Oranges
+
+//$color-new-yellow1: #ffd689; 
+$color-new-white1: #F0F0F0 ; 
+$color-new-yellow2: #ffb11e; 
+$color-new-yellow3: #f9a300; 
+// Oranges
+
+$color-new-orange1: #ffc289;
+$color-new-orange2: #ff8b1e;
+//$color-new-orange3: #f97900;
+$color-new-orange3: #f7787f;
+$color-new-hover1: #E84716;;
+$color-new-hover2: #feb726;
+
+
+//BLUE
+$color-new-blue0: #E5F7FF;
+$color-new-blue1: #D0F0FF;
+$color-new-blue2: #87CEEB; 
+$color-new-blue3: #00AEE4;
+$color-new-blue4: rgba(0, 174, 228, 255);
+$color-ter-blue: rgba(23,81,150,255);
+
+
+// Primary Colors
+$color-navy-blue: #005B96;          // Represents trust and stability, used for logo, headers, and primary buttons.
+$color-soft-sky-blue: #87CEEB;      // Evokes a sense of calm, great for backgrounds and secondary buttons.
+$color-pink: #f7787f;               // Used for vibrant UI elements and accents.
+$color-light-blue: #79c9f8;         // Light blue for less dominant elements needing visibility.
+$color-mint-green: #82f89f;         // Refreshing green for calm highlights and accents.
+$color-sun-yellow: #f8d779; 
+$color-warm-grey: #D7D2CC; // A warm grey that complements green tones
+        // Sunny yellow for energetic highlights.
+
+// Secondary Colors
+$color-warm-yellow: #FFD700;        // Warm yellow, conveys optimism, suitable for CTAs and highlights.
+$color-terakki-yellow: #fcbf1d;        // Warm yellow, conveys optimism, suitable for CTAs and highlights.
+ 
+
+    // Rich green, associated with growth, good for stats and progress bars.
+
+// Neutral Colors
+$color-light-grey: #F0F0F0;         // Light grey, ideal for background sections needing subtlety.
+$color-dark-grey: #585858;          // Dark grey for readable text and secondary UI elements.
+
+// Accent Colors
+$color-coral: #FF7F50;              // Vibrant coral, used sparingly to draw attention to key elements.
+
+// Text Colors for Readability and Accessibility
+$color-almost-black: #333333;   // High contrast, primary text color against light backgrounds.
+$color-black: black; //   // High contrast, primary text color against light backgrounds.
+$color-white: #FFFFFF;              // Primary text color for dark or vibrant backgrounds.
+
+// Button Colors
+$primary-button-bg: $color-navy-blue;
+$primary-button-text: $color-white;
+$secondary-button-bg: $color-soft-sky-blue;
+$secondary-button-text: $color-dark-grey;
+
+// Hover State Colors
+$hover-background-color: $color-navy-blue; // Background color for hover states.
+$hover-text-color: $color-white;           // Text color for hover states.
+
+// Lighter Shade of Navy Blue (Utility Color)
+$navy-blue-lighter: lighten($color-navy-blue, 10%); // Lighter navy blue for backgrounds or gradient effects.
