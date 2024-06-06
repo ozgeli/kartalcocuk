@@ -77,6 +77,7 @@ const Iletisim = () => {
               value={formData.subject}
               onChange={handleChange}
               required
+              autocomplete="subject"
             />
             <input
               type="text"
@@ -85,6 +86,7 @@ const Iletisim = () => {
               value={formData.name}
               onChange={handleChange}
               required
+              autocomplete="name"
             />
             <input
               type="email"
@@ -93,6 +95,7 @@ const Iletisim = () => {
               value={formData.email}
               onChange={handleChange}
               required
+              autocomplete="email"
             />
             <textarea
               name="message"
@@ -100,6 +103,7 @@ const Iletisim = () => {
               value={formData.message}
               onChange={handleChange}
               required
+              autocomplete="message"
             ></textarea>
             <button type="submit">Gönder</button>
           </form>
