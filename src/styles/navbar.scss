@@ -15,19 +15,20 @@ header {
   //padding: 10px; // Add padding to header
 
   @media (max-width: 768px) {
-    padding: 5px; // Reduce padding for mobile view
+    //padding: 5px; // Reduce padding for mobile view
   }
 }
 
 .floating-logo {
   position: absolute;
   top: 20px;
+  right: 50px;
   left: 50px;
   z-index: 1000;
 
   img {
-    height: 230px;
-    width: 230px;
+    height: 200px;
+    width: 200px;
     border-radius: 50%;
     box-shadow: 0 0 10px rgba(0, 174, 228, 0.5);
     transition: transform 0.4s ease, box-shadow 0.4s ease;
@@ -157,14 +158,14 @@ header {
 .hamburger {
   display: none;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1024px) {
     display: flex;
     cursor: pointer;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     order: 1; // Move to the left side
-    margin-right: 10px; // Align to the left
+    margin-right: auto; // Align to the left
 
     .line {
       width: 30px;
@@ -333,7 +334,7 @@ header {
     }
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 1024px) {
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
